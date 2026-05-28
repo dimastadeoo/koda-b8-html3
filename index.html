@@ -4,108 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>papan catur</title>
+    <style>
+        .center{
+            text-align: center;
+        }
+        /*setting ukuran div */
+        div.catur {
+            width: 480px;      /* 8 x 60px = 480px */
+            height: 480px;
+            border: 4px solid black;
+            margin: 50px auto; /* Membuat papan berada di tengah layar */
+            font-size: 0;      /* Menghilangkan spasi antar inline-block */
+        }
+
+        /* Aturan umum untuk span / kotaknya */
+        span {
+            display: inline-block; /*secara default span display inline, harus diubah ke inline-block agar bisa diatur lebar dan tingginya*/
+            width: 60px;
+            height: 60px;
+        }
+
+        /*background Warna putih*/
+        span.white {
+            background-color: #ffffff;
+        }
+        /*background Warna Hitam*/
+        span.black {
+            background-color: #000000;
+        }
+    </style>
 </head>
 <body>
-    <h1 align="center">PAPAN CATUR</h1>
-    <table border="2" align="center">
-        <tbody>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="white"></td>
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-            </tr>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="black
-                "></td>
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-            </tr>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="white"></td>
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-            </tr>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="black
-                "></td>
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-            </tr>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="white"></td>
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-            </tr>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="black
-                "></td>
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-            </tr>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="white"></td>
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black"></td> 
-            </tr>
-            <tr align="center" height="60">
-                <td width="60" bgcolor="black
-                "></td>
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-                <td width="60" bgcolor="black
-                "></td> 
-                <td width="60" bgcolor="white"></td> 
-            </tr>
-        </tbody>
-    </table>
+    <h1 class="center">PAPAN CATUR</h1>
+    <div class="catur">
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+        <span class="black"></span>
+        <span class="white"></span>
+    </div>
 </body>
 </html>
