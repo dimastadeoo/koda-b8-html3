@@ -5,106 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>papan catur</title>
     <style>
-        body{
+        /* atur posisi konten */
+        section{
             display: grid;
             place-items: center; 
         }
+        /* atur papan catur */
         div.catur {
             width: 100%;
-            max-width: 480px;    
+            max-width: 480px;  /*menentukan maksimal lebar papan catur*/  
             border: 4px solid black;
             display: grid;
             grid-template-columns: repeat(8, 1fr); 
-            aspect-ratio: 1/1;
-        }
-        span{
-            aspect-ratio: 1/1;
+            aspect-ratio: 1/1; /*supaya ukuran content 1 layar*/
         }
 
-        /*background Warna putih*/
-        span.white {
+        /*background Warna putih pada child dari class catur dengan span urutan genap*/
+        .catur > span:nth-child(even) {
             background-color: #ffffff;
         }
-        /*background Warna Hitam*/
-        span.black {
+        /*background Warna hitam pada child dari class catur dengan span urutan ganjil*/
+        .catur > span:nth-child(odd) {
             background-color: #000000;
+        }
+
+        /* kita balik warna khusus pada baris ganjil menjadi warna putih.*/
+        .catur > span:nth-of-type(16n+9),
+        .catur > span:nth-of-type(16n+11),
+        .catur > span:nth-of-type(16n+13),
+        .catur > span:nth-of-type(16n+15){
+            background: #ffffff;
+        }
+        /* kita balik warna khusus pada baris genap menjadi warna hitam.*/
+        .catur > span:nth-of-type(16n+10),
+        .catur > span:nth-of-type(16n+12),
+        .catur > span:nth-of-type(16n+14),
+        .catur > span:nth-of-type(16n+16){
+            background: #000000;
         }
     </style>
 </head>
 <body>
-    <h1 class="center">PAPAN CATUR</h1>
-    <div class="catur">
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-        <span class="black"></span>
-        <span class="white"></span>
-    </div>
+    <section>
+        <h1>PAPAN CATUR</h1>
+        <div class="catur">
+            <!-- baris 1 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- baris 2 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- baris 3 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- baris 4 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- baris 5 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- baris 6 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- baris 7 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <!-- baris 8 -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
 </body>
 </html>
